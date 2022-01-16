@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    
+    .sidebar {
+        background-color: $color_bg_2;
+        width: 270px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .main-content {
+        background-color: $color_bg_1;
+        width: calc(100% - 270px);
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+.main-content {
+    .main-header {
+        background-color: $color_white;
+        min-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        align-items: center;
+    }
+}

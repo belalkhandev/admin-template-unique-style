@@ -1,0 +1,127 @@
+.sidebar {
+    padding: 15px 10px;
+    position: relative;
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 15px;
+
+        img {
+            width: 85px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: $color_primary;
+            font-weight: 700;
+        }
+    }
+
+    .user {
+        margin-bottom: 15px;
+        background-color: #6D28D9;
+        color: $color_white;
+        padding: 15px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+
+        .user-img {
+
+            img {
+                width: 40px;
+            }
+        }
+        .user-info {
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+    
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+        }
+    }
+}
+
+.navigations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 15px;
+
+    .navigation-item {
+        text-align: center;
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color_white;
+        border-radius: 5px;
+        border: 1px solid $color_bg_1;
+
+        a {
+            color: $color_dark;
+            transition: 300ms;
+
+            i.bx {
+                font-size: 32px;
+                margin-bottom: 5px;
+            }
+
+            span {
+                display: block;
+                font-weight: 500;
+                
+            }
+        }
+
+        .navigation-content {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: $color_bg_2;
+            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 300ms;
+
+            .navigation-cotnent-header {
+
+            }
+
+            .navigation-content-body {
+                text-align: left;
+            }
+        }
+
+        &:hover {
+            background-color: $color_primary;
+            box-shadow: 0px 3px 3px #00000025;
+            cursor: pointer;
+
+            a {
+                color: $color_white;
+                transition: 500ms;
+            }
+        }
+
+        &.open {
+            .navigation-content {
+                left: 0;
+                visibility: visible;
+                opacity: 1;
+                z-index: 999;
+                transition: 500ms;
+            }
+        }
+    }
+}
