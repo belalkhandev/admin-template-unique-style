@@ -112,11 +112,95 @@ h6 {
 
 .box .box-body {
   padding: 10px 15px 15px;
+  overflow-y: auto;
 }
 
 .box .box-footer {
   border-top: 1px solid #e2e8f0;
   padding: 10px 15px 15px;
+}
+
+table {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.table thead {
+  border: none !important;
+}
+
+.table thead tr {
+  background-color: #f1f5f9;
+  border-bottom-color: #e2e8f0;
+}
+
+.table thead tr th {
+  font-weight: 500;
+  color: #1f2937;
+  font-family: "Livvic", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.table tbody {
+  border: none !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+
+.table tbody tr {
+  position: relative;
+  border-bottom-color: #e2e8f0;
+}
+
+.table tbody tr::after {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 2px;
+  background-color: #6366f1;
+  height: 100%;
+  content: '';
+}
+
+.table tbody tr td {
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.table tbody tr td .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  font-size: 16px;
+}
+
+.table tbody tr td .action a {
+  padding: 3px 3px;
+  line-height: 0px;
+  border-radius: 3px;
+}
+
+.table tbody tr td .action a:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #eef2ff;
+  cursor: pointer;
+}
+
+.table tbody tr:hover::after {
+  left: 0;
+  content: '';
+  transition: 300ms;
 }
 
 .wrapper {
@@ -261,6 +345,10 @@ h6 {
 .navigations .navigation-item:hover a {
   color: #ffffff;
   transition: 500ms;
+}
+
+.navigations .navigation-item:hover a i.bx {
+  color: #ffffff;
 }
 
 .navigations .navigation-item.open .navigation-content {
