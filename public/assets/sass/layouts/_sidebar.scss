@@ -14,14 +14,14 @@
         h2 {
             margin-top: 10px;
             font-size: 18px;
-            color: $color_primary;
+            color: $color_slate_600;
             font-weight: 700;
         }
     }
 
     .user {
         margin-bottom: 15px;
-        background-color: #6D28D9;
+        background-color: $color_indigo_500;
         color: $color_white;
         padding: 15px 10px;
         border-radius: 5px;
@@ -49,6 +49,12 @@
 
         }
     }
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+
 }
 
 .navigations {
@@ -64,10 +70,10 @@
         justify-content: center;
         background-color: $color_white;
         border-radius: 5px;
-        border: 1px solid $color_bg_1;
+        border: 1px solid $color_indigo_100;
+        box-shadow: 0px 3px 4px $color_indigo_200;
 
         a {
-            color: $color_dark;
             transition: 300ms;
 
             i.bx {
@@ -104,8 +110,7 @@
         }
 
         &:hover {
-            background-color: $color_primary;
-            box-shadow: 0px 3px 3px #00000025;
+            background-color: $color_indigo_600;
             cursor: pointer;
 
             a {
@@ -113,6 +118,8 @@
                 transition: 500ms;
             }
         }
+
+        
 
         &.open {
             .navigation-content {

@@ -4,7 +4,7 @@
     //on document ready function
     jQuery(document).ready(function(){
         
-        $(document).on('click', '.has-multimenu .nav-link', function(e) {
+        $(document).on('click', '.has-multimenu .menu-link', function(e) {
             e.preventDefault();            
             $('.navigation-item').removeClass('open');
             $(this).closest('.navigation-item').addClass('open');

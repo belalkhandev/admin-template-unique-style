@@ -14,4 +14,49 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font_secondary;
+    color: $color_slate_800;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color_indigo_200;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color_indigo_300;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color_indigo_600;
 }

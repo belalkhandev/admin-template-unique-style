@@ -14,7 +14,7 @@
 <body>
     
     <div class="wrapper">
-        <div class="sidebar border-l border-sky-500">
+        <div class="sidebar">
             <!-- brand-logo -->
             <div class="logo">
                 <img src="public/assets/images/logo.png" alt="">
@@ -33,8 +33,8 @@
             <!-- main menus -->
             <div class="navigations">
                 <div class="navigation-item has-multimenu">
-                    <a href="" class="nav-link">
-                        <i class='bx bxs-tachometer' ></i>
+                    <a href="" class="menu-link">
+                        <i class="bx bxs-tachometer text-green-50" ></i>
                         <span>Dashboard</span>
                     </a>
                     <div class="navigation-content">
@@ -66,7 +66,7 @@
                     </a>
                 </div>
                 <div class="navigation-item has-multimenu">
-                    <a href="" class="nav-link">
+                    <a href="" class="menu-link">
                         <i class='bx bxs-report' ></i>
                         <span>Reports</span>
                     </a>
@@ -123,10 +123,129 @@
                 <h5>Dashboard</h5>
             </div>
             <div class="content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi animi placeat facere reiciendis, laboriosam sapiente voluptates consectetur nulla vitae aliquid, odit, labore ut a nostrum quae debitis. Libero, expedita ab! Ad facere doloribus vitae sequi? Quos suscipit quisquam inventore. Distinctio unde recusandae voluptatem necessitatibus accusantium velit nemo iusto officiis impedit repudiandae aperiam ipsam nobis obcaecati facere, atque nisi illo ratione perspiciatis odio inventore fugiat rem! Pariatur optio est consequuntur quod. Voluptates non saepe sequi enim reiciendis possimus, temporibus omnis et incidunt accusamus ex dolore necessitatibus rerum optio. Facilis eos adipisci alias aliquam enim praesentium maxime dolore culpa placeat, repellendus eligendi recusandae cum laboriosam, iure natus.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi animi placeat facere reiciendis, laboriosam sapiente voluptates consectetur nulla vitae aliquid, odit, labore ut a nostrum quae debitis. Libero, expedita ab! Ad facere doloribus vitae sequi? Quos suscipit quisquam inventore. Distinctio unde recusandae voluptatem necessitatibus accusantium velit nemo iusto officiis impedit repudiandae aperiam ipsam nobis obcaecati facere, atque nisi illo ratione perspiciatis odio inventore fugiat rem! Pariatur optio est consequuntur quod. Voluptates non saepe sequi enim reiciendis possimus, temporibus omnis et incidunt accusamus ex dolore necessitatibus rerum optio. Facilis eos adipisci alias aliquam enim praesentium maxime dolore culpa placeat, repellendus eligendi recusandae cum laboriosam, iure natus.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi animi placeat facere reiciendis, laboriosam sapiente voluptates consectetur nulla vitae aliquid, odit, labore ut a nostrum quae debitis. Libero, expedita ab! Ad facere doloribus vitae sequi? Quos suscipit quisquam inventore. Distinctio unde recusandae voluptatem necessitatibus accusantium velit nemo iusto officiis impedit repudiandae aperiam ipsam nobis obcaecati facere, atque nisi illo ratione perspiciatis odio inventore fugiat rem! Pariatur optio est consequuntur quod. Voluptates non saepe sequi enim reiciendis possimus, temporibus omnis et incidunt accusamus ex dolore necessitatibus rerum optio. Facilis eos adipisci alias aliquam enim praesentium maxime dolore culpa placeat, repellendus eligendi recusandae cum laboriosam, iure natus.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi animi placeat facere reiciendis, laboriosam sapiente voluptates consectetur nulla vitae aliquid, odit, labore ut a nostrum quae debitis. Libero, expedita ab! Ad facere doloribus vitae sequi? Quos suscipit quisquam inventore. Distinctio unde recusandae voluptatem necessitatibus accusantium velit nemo iusto officiis impedit repudiandae aperiam ipsam nobis obcaecati facere, atque nisi illo ratione perspiciatis odio inventore fugiat rem! Pariatur optio est consequuntur quod. Voluptates non saepe sequi enim reiciendis possimus, temporibus omnis et incidunt accusamus ex dolore necessitatibus rerum optio. Facilis eos adipisci alias aliquam enim praesentium maxime dolore culpa placeat, repellendus eligendi recusandae cum laboriosam, iure natus.</p>
+                
+                <div class="box">
+                    <div class="box-header">
+                        <div class="box-title">
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                        </div>
+                        <div class="box-action">
+                            <a href="" class="btn btn-danger">Some Button</a>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <h3>Some content here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus harum recusandae perferendis nemo quasi temporibus, aut excepturi illo sint beatae id consequatur placeat ad!</p>
+                        <h3>Some content here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus harum recusandae perferendis nemo quasi temporibus, aut excepturi illo sint beatae id consequatur placeat ad!</p>
+                    </div>
+                    <div class="box-footer">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-header">
+                        <div class="box-title">
+                            <h4>Table list</h4>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="filter"></div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Father's Name</th>
+                                    <th>Mother's Name</th>
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Md. Bellal Hossain</td>
+                                    <td>Md. Abdul Kader Khan</td>
+                                    <td>Mst Bilkis Begum</td>
+                                    <td>01798673163</td>
+                                    <td>Dhaka Bangladesh</td>
+                                    <td>
+                                        <div class="action">
+                                            <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                            <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                            <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Md. Bellal Hossain</td>
+                                    <td>Md. Abdul Kader Khan</td>
+                                    <td>Mst Bilkis Begum</td>
+                                    <td>01798673163</td>
+                                    <td>Dhaka Bangladesh</td>
+                                    <td>
+                                        <div class="action">
+                                            <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                            <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                            <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Md. Bellal Hossain</td>
+                                    <td>Md. Abdul Kader Khan</td>
+                                    <td>Mst Bilkis Begum</td>
+                                    <td>01798673163</td>
+                                    <td>Dhaka Bangladesh</td>
+                                    <td>
+                                        <div class="action">
+                                            <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                            <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                            <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Md. Bellal Hossain</td>
+                                    <td>Md. Abdul Kader Khan</td>
+                                    <td>Mst Bilkis Begum</td>
+                                    <td>01798673163</td>
+                                    <td>Dhaka Bangladesh</td>
+                                    <td>
+                                        <div class="action">
+                                            <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                            <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                            <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>Md. Bellal Hossain</td>
+                                    <td>Md. Abdul Kader Khan</td>
+                                    <td>Mst Bilkis Begum</td>
+                                    <td>01798673163</td>
+                                    <td>Dhaka Bangladesh</td>
+                                    <td>
+                                        <div class="action">
+                                            <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                            <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                            <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="box-footer"></div>
+                </div>
+                
             </div>
         </div>
     </div>
