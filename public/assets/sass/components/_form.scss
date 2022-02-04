@@ -1,0 +1,21 @@
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        font-weight: 500;
+        font-family: $font_secondary;
+    }
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+        border-color: $color_indigo_300;
+    }
+}
+.form-select {
+    &:focus {
+        box-shadow: none;
+        border-color: $color_indigo_300;
+    }
+}

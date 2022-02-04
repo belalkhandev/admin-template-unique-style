@@ -15,6 +15,14 @@
             $(this).closest('.navigation-item').removeClass('open');
         });
 
+        $(document).on('click', '.rs-open-sidebar .navigation-item .menu-link', function() {                      
+            $('.wrapper').removeClass('rs-open-sidebar');
+        });
+
+        $(document).on('click', '#drawer', function(e) {
+            $('.wrapper').addClass('rs-open-sidebar');
+        });
+
     });
 
     //on load windw

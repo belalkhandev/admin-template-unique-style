@@ -100,12 +100,45 @@
             opacity: 0;
             transition: 300ms;
 
-            .navigation-cotnent-header {
-
+            .navigation-content-header {
+                margin-top: 15px;
             }
 
             .navigation-content-body {
                 text-align: left;
+
+                h5 {
+                    margin-top: 15px;
+                    font-weight: 500;
+                    color: $color_gray_600;
+                    font-size: 1rem;
+                    // background-color: $color_indigo_50;
+                    border-bottom: 1px solid $color_indigo_200;
+                    padding: 3px 5px;
+                    // border-radius: 3px;
+                }
+
+                ul {
+                    margin-top: 10px;
+                    li {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 14px;
+                            padding: 5px 0px;
+
+                            i.bx {
+                                margin: 0px;
+                                margin-right: 5px;
+                                font-size: 20px;
+                                color: $color_slate_400;
+                                transition: 300ms;
+                            }
+                        }
+                    }
+                }
+
             }
         }
 
@@ -121,9 +154,32 @@
                     color: $color_white;
                 }
             }
-        }
 
-        
+            .navigation-content {
+                .navigation-content-body {
+                    ul {
+                        li {
+                            a {
+                                color: inherit;
+                            }
+    
+                            &:hover {
+                                background-color: $color_indigo_500;
+                                border-radius: 5px;
+                                a {
+                                    color: $color_white;
+    
+                                    i.bx {
+                                        color: $color_white;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }        
 
         &.open {
             .navigation-content {
