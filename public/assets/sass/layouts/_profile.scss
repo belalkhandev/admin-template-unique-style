@@ -1,0 +1,17 @@
+.profile {
+    .user-box {
+        text-align: center;
+        background-color: $color_indigo_50;
+        padding: 15px;
+
+        img {
+            width: 75px;
+            margin: 10px auto;
+        }
+
+        .btn {
+            width: 100%;
+            margin: 5px 0px;
+        }
+    }
+}

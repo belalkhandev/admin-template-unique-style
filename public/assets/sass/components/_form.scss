@@ -13,9 +13,14 @@
         border-color: $color_indigo_300;
     }
 }
+
 .form-select {
     &:focus {
         box-shadow: none;
         border-color: $color_indigo_300;
     }
+}
+
+.form-control::-webkit-scrollbar {
+    width: 3px;
 }

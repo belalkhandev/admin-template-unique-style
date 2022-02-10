@@ -1,0 +1,124 @@
+.auth-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .auth {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .auth-box {
+            width: 350px;
+            margin: 0px 100px;
+
+            .auth-header {
+                text-align: center;
+                .logo {
+                    margin-bottom: 15px;
+                    
+                    img {
+                        width: 100px;
+                    }
+                }
+                margin-bottom: 30px;
+
+                h1 {
+                    font-weight: 600;
+                }
+            }
+
+            .auth-body {
+                .form-group {
+                    label {
+                        margin-bottom: 5px;
+                    }
+                    .form-control {
+                        height: 45px;
+                        border-radius: 8px;
+                    }
+
+                    &.form-submit-group {
+                        margin-top: 25px;
+
+                        .btn {
+                            width: 100%;
+                            padding: 5px 15px;
+                            border-radius: 8px;
+                            font-size: 18px;
+                            font-weight: 600;
+
+                            &.btn-primary {
+                                background-color: $color_indigo_600;
+                                border-color: $color_indigo_700;
+                            }
+
+                            &:hover {
+                                &.btn-primary {
+                                    background-color: $color_indigo_700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .auth-footer {
+
+            }
+        }
+    }
+
+    .auth-content {
+        justify-content: flex-start;
+        width: 50%;
+        background-color: $color_primary;
+        height: 100%;
+
+        .content {
+            margin: 0px 100px;
+
+            h1 {
+                color: $color_slate_200;
+                font-size: 36px;
+            }
+
+            h5  {
+                margin-top: 15px;
+                color: $color_indigo_100;
+                font-size: 20px;
+            }
+
+            img {
+                margin-top: 30px;
+                width: 75%;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        .auth {
+            width: 100%;
+
+            .auth-box {
+                width: 80%;
+                margin: 0 auto;
+
+                .auth-header {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .auth-content {
+            display: none;
+        }
+    }
+}

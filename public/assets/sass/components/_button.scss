@@ -1,0 +1,76 @@
+button, 
+[type='button'], 
+[type='reset'], 
+[type='submit'] {
+    color: #4f46e5;
+}
+
+// button style
+.btn,  button, 
+[type='button'], 
+[type='reset'], 
+[type='submit']
+{
+    &.btn-primary {
+        background-color: $color_indigo_600 !important;
+        color: $color_white;
+
+        &:hover {
+            background-color: $color_indigo_800 !important;
+        }
+    }
+
+    &.btn-success {
+        background-color: $color_green_600 !important;
+        color: $color_white;
+
+        &:hover {
+            background-color: $color_green_800 !important;
+        }
+    }
+
+    &.btn-danger {
+        background-color: $color_red_600 !important;
+        color: $color_white;
+
+        &:hover {
+            background-color: $color_red_800 !important;
+        }
+    }
+
+    &.btn-warning {
+        background-color: $color_yellow_600 !important;
+        color: $color_white;
+
+        &:hover {
+            background-color: $color_yellow_800 !important;
+        }
+    }
+}
+
+button[type=submit].btn {
+    position: relative;
+
+    .spinner-border {
+        position: absolute;
+        top: calc(50% - 0.6rem);
+        left: calc(50% - 0.6rem);
+        width: 1.2rem;
+        height: 1.2rem;
+        visibility: hidden;
+    }
+
+    &.submitted {
+        span {
+            visibility: hidden;
+        }
+
+        .spinner-border {
+            visibility: visible;
+        }
+    }
+}
+
+button[type=submit].btn.submitted span{
+    visibility: hidden;
+}

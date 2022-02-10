@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     
     .sidebar {
         background-color: $color_bg_2;
@@ -18,11 +19,11 @@
     }
     
     @media screen and (max-width: 576px){
-        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         .sidebar {
             width: 100%;
-            position: absolute;
             top: 0;
             left: 0;
             height: 100%;
@@ -59,5 +60,24 @@
 
     .content {
         padding: 15px;
+    }
+}
+
+.full-screen {
+    .wrapper {
+        .sidebar {
+            display: none;
+        }
+    
+        .main-content {
+            width: 100%;
+            .main-header {
+                display: none;
+            }
+
+            .content {
+                padding: 0;
+            }
+        }
     }
 }
