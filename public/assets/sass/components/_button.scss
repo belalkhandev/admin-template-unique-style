@@ -20,12 +20,32 @@ button,
         }
     }
 
+    &.btn-outline-primary {
+        border-color: $color_indigo_600 !important;
+        color: $color_indigo_600;
+
+        &:hover {
+            background-color: $color_indigo_600 !important;
+            color: $color_white;
+        }
+    }
+
     &.btn-success {
         background-color: $color_green_600 !important;
         color: $color_white;
 
         &:hover {
             background-color: $color_green_800 !important;
+        }
+    }
+
+    &.btn-outline-success {
+        border-color: $color_green_600 !important;
+        color: $color_green_600;
+
+        &:hover {            
+            background-color: $color_green_600 !important;
+            color: $color_white;
         }
     }
 

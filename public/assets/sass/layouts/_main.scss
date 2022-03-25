@@ -9,6 +9,16 @@
         height: 100vh;
         overflow-y: auto;
         border-right: 1px solid $color_indigo_100;
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            color: $color_danger;
+            font-size: 20px;
+            display: none;
+        }
     }
 
     .main-content {
@@ -18,23 +28,32 @@
         overflow-y: auto;
     }
     
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 768px){
         flex-direction: row;
         flex-wrap: wrap;
 
         .sidebar {
+            position: fixed;
             width: 100%;
-            top: 0;
+            top: 50%;
             left: 0;
             height: 100%;
-            visibility: visible;
-            opacity: 1;
-            transition: 300ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 999;
+
+            .close {
+                display: block;
+            }
+
         }
         
         &.rs-open-sidebar {
             .sidebar {
-                left: 0;
+                top: 0;
+                opacity: 1;
+                visibility: visible;
+                transition: 300ms;
             }
         }
 
@@ -52,14 +71,50 @@
         justify-content: space-between;
         padding: 0px 15px;
         align-items: center;
-        // position: fixed;
-        // top: 0;
-        // right: 0;
-        // width: calc(100% - 270px);
+        
+        .page-control {
+            display: flex;
+            align-items: center;
+            line-height: 0;
+
+            .app-icon {
+                cursor: pointer;
+                display: none;
+                .bx {
+                    margin-right: 10px;
+                    font-size: 24px;
+                    color: $color_indigo_600;
+                }
+            }
+
+            h5 {
+                font-weight: 500;
+            }
+        }
     }
 
     .content {
         padding: 15px;
+    }
+
+    @media screen and (max-width: 768px){
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            width: 100%;
+
+            .page-control {
+                .app-icon {
+                    display: block;
+                }
+            }
+        }
+
+        .content {
+            margin-top: 50px;
+        }
     }
 }
 

@@ -1,0 +1,81 @@
+.member-select {
+    position: relative;
+    .member-input {
+        position: relative;
+        .form-control {
+            cursor: pointer;
+        }
+
+        .select-icon {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 20px;
+            color: $color_slate_500;
+        }
+    }
+
+    .member-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: $color_slate_50;
+        border: 1px solid $color_slate_200;
+        display: none;
+
+        .member-search {
+            position: relative;
+
+            .form-control {
+                border: none;
+                border-bottom: 1px solid $color_slate_200;
+                border-radius: 0px;
+            }
+
+            .list-close {
+                position: absolute;
+                top: 7px;
+                right: 10px;
+                font-size: 20px;
+                color: $color_red_500;
+                // border: 1px solid $color_red_500;
+                line-height: 0;
+                cursor: pointer;
+
+                &:active {
+                    background-color: $color_red_500;
+                    color: $color_white;
+                }
+            }
+        }
+
+        .members {
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 5px 0px;
+
+            .member {
+                font-size: 14px;
+                cursor: pointer;
+                padding: 7px 5px;
+                border-bottom: 1px dashed $color_slate_200;
+
+                &:hover {
+                    background-color: $color_indigo_100;
+                    transition: 200ms;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+        }
+    }
+
+    &.open {
+        .member-list {
+            display: block;
+        }
+    }
+}

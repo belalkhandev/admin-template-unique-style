@@ -24,3 +24,63 @@
 .form-control::-webkit-scrollbar {
     width: 3px;
 }
+
+.form-section {
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: $color_white;
+    border: 1px solid $color_gray_100;
+
+    h5 {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $color_gray_200;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &.form-section-primary {
+        background-color: $color_indigo_50;
+        border: 1px solid $color_indigo_100;
+
+        h5 {
+            border-bottom: 1px solid $color_indigo_200;
+        }
+    }
+
+    &.form-section-secondary {
+        background-color: $color_slate_50;
+        border: 1px solid $color_slate_100;
+
+        h5 {
+            border-bottom: 1px solid $color_slate_200;
+        }
+    }
+
+    &.form-section-success {
+        background-color: $color_green_50;
+        border: 1px solid $color_green_100;
+
+        h5 {
+            border-bottom: 1px solid $color_green_200;
+        }
+    }
+
+    &.form-section-warning {
+        background-color: $color_yellow_50;
+        border: 1px solid $color_yellow_100;
+
+        h5 {
+            border-bottom: 1px solid $color_yellow_200;
+        }
+    }
+
+    &.form-section-danger {
+        background-color: $color_red_50;
+        border: 1px solid $color_red_100;
+
+        h5 {
+            border-bottom: 1px solid $color_red_200;
+        }
+    }
+}

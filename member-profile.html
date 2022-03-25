@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Template Design</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="public/assets/css/tailwind.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="sidebar">
+            <!-- brand-logo -->
+            <div class="logo">
+                <img src="public/assets/images/logo.png" alt="">
+                <h2>PDSCDSL</h2>
+            </div>
+            <!-- user -->
+            <div class="user">
+                <div class="user-img">
+                    <img src="public/assets/images/user.png" alt="">
+                </div>
+                <div class="user-info">
+                    <h3>Khusy Kumar Das</h3>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <!-- main menus -->
+            <div class="navigations">
+                <div class="navigation-item has-multimenu">
+                    <a href="" class="menu-link">
+                        <i class="bx bxs-tachometer text-blue-600" ></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <div class="navigation-content">
+                        Some content here
+                    </div>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class="bx bxs-user-rectangle text-red-600" ></i>
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-user-account text-indigo-600' ></i>
+                        <span>Members</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class="bx bxs-user-rectangle text-red-600" ></i>
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-user-account text-indigo-600' ></i>
+                        <span>Members</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-file-doc text-green-600' ></i>
+                        <span>Applications</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-user-badge' ></i>
+                        <span>Admins</span>
+                    </a>
+                </div>
+                <div class="navigation-item has-multimenu">
+                    <a href="" class="menu-link">
+                        <i class='bx bxs-report' ></i>
+                        <span>Reports</span>
+                    </a>
+                    <div class="navigation-content">
+                        <div class="close-bar">
+                            <i class='bx bx-x'></i>
+                            <span>Close</span>
+                        </div>
+                        <div class="navigation-content-header">
+                            <h3>Reports</h3>
+                        </div>
+                        <div class="navigation-content-body">
+                            <h5>Daily Reports</h5>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h5>Daily Reports</h5>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-cog' ></i>
+                        <span>Settings</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-log-out' ></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-header">
+                <div id="drawer">Apps</div>
+                <h5>Dashboard</h5>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="box-body">
+                                <div class="member member-show">
+                                    <div class="member-img mb-2">
+                                        <img src="public/assets/images/user.png" alt="">
+                                    </div>
+                                    <div class="member-info text-center mb-4">
+                                        <h3>Arun Kumar Shil</h3>
+                                        <a href="tel:01798673163">017xxxxxxx09</a>
+                                    </div>
+                                    <div class="member-nav mb-4">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <span>Profile</span>
+                                                    <i class='bx bx-chevrons-right'></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>New transaction</span>
+                                                    <i class='bx bx-chevrons-right'></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Transction history</span>
+                                                    <i class='bx bx-chevrons-right'></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Account Details</span>
+                                                    <i class='bx bx-chevrons-right'></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="member-account mb-2">
+                                        <h5>Account Overview</h5>
+                                        <table class="w-100">
+                                            <tr>
+                                                <td>Account no</td>
+                                                <td class="text-right">01123456</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Member Type</td>
+                                                <td class="text-right">DPS Weekly</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address</td>
+                                                <td class="text-right">Bhatpeary, Bhatpeary-6700, Sirajganj</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Status</td>
+                                                <td class="text-success text-right">Active</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="member-download">
+                                        <h5 class="member-section-ttile">Download</h5>
+                                        <a href="" class="btn btn-outline-primary w-100">
+                                            <i class="bx bx-download"></i>
+                                            Member Profile
+                                        </a>
+                                        <a href="" class="btn btn-outline-success w-100 mt-2">                                            <i class="bx bx-download"></i>
+                                            Transaction History
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">
+                                    <h5>Member Profile</h5>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="member-details">
+                                    <div class="member-detail">
+                                        <h3>Personal Information</h5>
+                                        <div class="member-infos">
+                                            <div class="member-info">
+                                                <p>Father/Spouse name</p>
+                                                <h5>Fathers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Mother  name</p>
+                                                <h5>Mothers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Gender</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Phone</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Gender</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>NID</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-detail">
+                                        <h3>Nominee information</h5>
+                                        <div class="member-infos">
+                                            <div class="member-info">
+                                                <p>Name</p>
+                                                <h5>Fathers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Father/Spouse name</p>
+                                                <h5>Fathers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Mother  name</p>
+                                                <h5>Mothers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Gender</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Phone</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Gender</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>NID</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Relation</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Address</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-detail">
+                                        <h3>Account information</h5>
+                                        <div class="member-infos">
+                                            <div class="member-info">
+                                                <p>Account No</p>
+                                                <h5>Fathers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Joining Date</p>
+                                                <h5>Fathers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Member Type</p>
+                                                <h5>Mothers name</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Group</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                            <div class="member-info">
+                                                <p>Day</p>
+                                                <h5>Male</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Mother's Name</th>
+                                            <th>Phone</th>
+                                            <th>Address</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Md. Abdul Kader Khan</td>
+                                            <td>Mst Bilkis Begum</td>
+                                            <td>01798673163</td>
+                                            <td>Dhaka Bangladesh</td>
+                                            <td>
+                                                <div class="action">
+                                                    <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                                    <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                                    <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>Md. Abdul Kader Khan</td>
+                                            <td>Mst Bilkis Begum</td>
+                                            <td>01798673163</td>
+                                            <td>Dhaka Bangladesh</td>
+                                            <td>
+                                                <div class="action">
+                                                    <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                                    <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                                    <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>Md. Abdul Kader Khan</td>
+                                            <td>Mst Bilkis Begum</td>
+                                            <td>01798673163</td>
+                                            <td>Dhaka Bangladesh</td>
+                                            <td>
+                                                <div class="action">
+                                                    <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                                    <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                                    <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>Md. Abdul Kader Khan</td>
+                                            <td>Mst Bilkis Begum</td>
+                                            <td>01798673163</td>
+                                            <td>Dhaka Bangladesh</td>
+                                            <td>
+                                                <div class="action">
+                                                    <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                                    <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                                    <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>Md. Abdul Kader Khan</td>
+                                            <td>Mst Bilkis Begum</td>
+                                            <td>01798673163</td>
+                                            <td>Dhaka Bangladesh</td>
+                                            <td>
+                                                <div class="action">
+                                                    <a href="" class="text-blue-400"><i class="bx bx-show"></i></a>
+                                                    <a href="" class="text-green-400"><i class="bx bx-edit"></i></a>
+                                                    <a href="" class="text-red-400"><i class="bx bx-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/boxicons/dist/boxicons.js"></script>
+    <script src="public/assets/js/main.js"></script>
+</body>
+</html>

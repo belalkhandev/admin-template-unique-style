@@ -11,6 +11,10 @@
     cursor: pointer;
     grid-gap: 15px;
 
+    @media screen and (max-width: 768px){
+        margin-bottom: 15px;
+    }
+
     .widget-header{
         width: 100%;
         display: flex;

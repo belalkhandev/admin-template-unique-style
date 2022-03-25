@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Template Design</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="public/assets/css/tailwind.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="sidebar">
+            <!-- brand-logo -->
+            <div class="logo">
+                <img src="public/assets/images/logo.png" alt="">
+                <h2>PDSCDSL</h2>
+            </div>
+            <!-- user -->
+            <div class="user">
+                <div class="user-img">
+                    <img src="public/assets/images/user.png" alt="">
+                </div>
+                <div class="user-info">
+                    <h3>Khusy Kumar Das</h3>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <!-- main menus -->
+            <div class="navigations">
+                <div class="navigation-item has-multimenu">
+                    <a href="" class="menu-link">
+                        <i class="bx bxs-tachometer text-blue-600" ></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <div class="navigation-content">
+                        Some content here
+                    </div>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class="bx bxs-user-rectangle text-red-600" ></i>
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-user-account text-indigo-600' ></i>
+                        <span>Members</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class="bx bxs-user-rectangle text-red-600" ></i>
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-user-account text-indigo-600' ></i>
+                        <span>Members</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-file-doc text-green-600' ></i>
+                        <span>Applications</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-user-badge' ></i>
+                        <span>Admins</span>
+                    </a>
+                </div>
+                <div class="navigation-item has-multimenu">
+                    <a href="" class="menu-link">
+                        <i class='bx bxs-report' ></i>
+                        <span>Reports</span>
+                    </a>
+                    <div class="navigation-content">
+                        <div class="close-bar">
+                            <i class='bx bx-x'></i>
+                            <span>Close</span>
+                        </div>
+                        <div class="navigation-content-header">
+                            <h3>Reports</h3>
+                        </div>
+                        <div class="navigation-content-body">
+                            <h5>Daily Reports</h5>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h5>Daily Reports</h5>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                        <span>Daily Collection Report</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-cog' ></i>
+                        <span>Settings</span>
+                    </a>
+                </div>
+                <div class="navigation-item">
+                    <a href="">
+                        <i class='bx bxs-log-out' ></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-header">
+                <div id="drawer">Apps</div>
+                <h5>Dashboard</h5>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="box-title">
+                            <h5>Application (DPS/Loan)</h5>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Member</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="member-select">
+                                                    <div class="member-input">
+                                                        <input type="text" name="" id="" class="form-control" placeholder="Choose Member" readonly>
+                                                        <span class="select-icon">
+                                                            <i class="bx bx-chevron-down"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="member-list">
+                                                        <div class="member-search">
+                                                            <input type="text" name="" placeholder="Search by account no, name, phone" class="form-control">
+                                                            <span class="list-close">
+                                                                <i class="bx bx-x"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="members">
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Deposit Amount</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Year</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Total Receive/Getting</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Profit</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Application Type</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="mt-2">
+                                                    <label>
+                                                        <input type="radio" name="application_type" checked>
+                                                        <span>Weekly</span>
+                                                    </label>
+    
+                                                    <label>
+                                                        <input type="radio" name="application_type">
+                                                        <span>Monthly</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">Select Day</option>
+                                                            <option value="">Saturday</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="date" name="" class="form-control" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box-footer"></div>
+                </div>
+                <div class="box">
+                    <div class="box-header">
+                        <div class="box-title">
+                            <h5>Application (DPS/Loan)</h5>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Member</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="member-select">
+                                                    <div class="member-input">
+                                                        <input type="text" name="" id="" class="form-control" placeholder="Choose Member" readonly>
+                                                        <span class="select-icon">
+                                                            <i class="bx bx-chevron-down"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="member-list">
+                                                        <div class="member-search">
+                                                            <input type="text" name="" placeholder="Search by account no, name, phone" class="form-control">
+                                                            <span class="list-close">
+                                                                <i class="bx bx-x"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="members">
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                            <div class="member">
+                                                                <p>152 - Md. Belal khan - 01798673163 (weekly)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Loan Amount</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Service (in %)</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Total Amount</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Total Installment</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Installment Amount</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" name="" placeholder="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Application Type</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="mt-2">
+                                                    <label>
+                                                        <input type="radio" name="application_type" checked>
+                                                        <span>Weekly</span>
+                                                    </label>
+    
+                                                    <label>
+                                                        <input type="radio" name="application_type">
+                                                        <span>Monthly</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <label for="" class="col-form-label">Start From</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">Select Day</option>
+                                                            <option value="">Saturday</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="date" name="" class="form-control" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/boxicons/dist/boxicons.js"></script>
+    <script src="public/assets/js/main.js"></script>
+</body>
+</html>

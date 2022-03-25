@@ -54,13 +54,20 @@
     &::-webkit-scrollbar {
         width: 0px;
     }
-
 }
 
 .navigations {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px 15px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .navigation-item {
         text-align: center;
@@ -104,7 +111,7 @@
             padding: 10px;
             visibility: hidden;
             opacity: 0;
-            transition: 300ms;
+            transition: 200ms;
             cursor: default;
             overflow-y: auto;
 
@@ -124,6 +131,13 @@
                 i.bx {
                     font-size: 20px;
                 }
+
+                &:active {
+                    i.bx {
+                        background-color: $color_danger;
+                        color: $color_white;
+                    }
+                }
             }
 
 
@@ -138,7 +152,7 @@
                     margin-top: 15px;
                     font-weight: 500;
                     color: $color_gray_600;
-                    font-size: 18px;
+                    font-size: 16px;
                     // background-color: $color_indigo_50;
                     border-bottom: 1px solid $color_indigo_200;
                     padding: 3px 5px;
@@ -148,13 +162,12 @@
                 ul {
                     margin-top: 10px;
                     li {
-                        margin-bottom: 10px;
                         a {
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
                             flex-wrap: nowrap;
-                            font-size: 15px;
+                            font-size: 14px;
                             padding: 5px 0px;
 
                             i.bx {
@@ -236,7 +249,11 @@
                 visibility: visible;
                 opacity: 1;
                 z-index: 999;
-                transition: 500ms;
+                transition: 300ms;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
             }
         }
     }
