@@ -4,12 +4,13 @@
     border-radius: 10px;
     box-shadow: 0px 2px 3px #00000010;
     border: 1px solid $color_indigo_100;
-    min-height: 110px;
+    min-height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     cursor: pointer;
     grid-gap: 15px;
+    border-bottom: 3px solid $color_indigo_500;
 
     @media screen and (max-width: 768px){
         margin-bottom: 15px;
@@ -56,6 +57,7 @@
     }
 
     &.widget-primary {
+        border-bottom-color: $color_indigo_500;
         .widget-header {
             .title {
                 color: $color_indigo_600;
@@ -79,6 +81,7 @@
     }
 
     &.widget-success {
+        border-bottom-color: $color_green_500;
         .widget-header {
             .title {
                 color: $color_green_600;
@@ -102,6 +105,7 @@
     }
 
     &.widget-danger {
+        border-bottom-color: $color_red_500;
         .widget-header {
             .title {
                 color: $color_red_600;
@@ -125,6 +129,7 @@
     }
     
     &.widget-warning {
+        border-bottom-color: $color_yellow_500;
         .widget-header {
             .title {
                 color: $color_yellow_600;

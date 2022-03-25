@@ -1,0 +1,39 @@
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 5px;
+
+        .page-item {
+            display: flex;
+            grid-gap: 5px;
+            padding: 0px;
+
+            .page-link {
+
+                border: 1px solid $color_indigo_600;
+                background: transparent;
+                padding: 3px 8px 1px 8px;
+                border-radius: 3px;
+
+                &:hover {
+                    background: $color_gray_300;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+
+                .active {
+                    background: $color_indigo_600;
+                    color: $color_white;
+                }
+            }
+        }
+    }
+}

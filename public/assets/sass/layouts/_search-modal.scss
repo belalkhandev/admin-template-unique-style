@@ -1,0 +1,92 @@
+.search-container {
+    cursor: default;
+    .btn.btn-search {
+        border: 1px solid $color-slate-300;
+        background-color: $color_gray_50;
+        font-weight: 600;
+        color: $color-indigo-600;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:active {
+            background-color: $color_gray_100;
+        }
+    }
+
+    .search-form {
+        margin-bottom: 15px;
+        .form-group {
+            .input-group {
+                border-bottom: 1px solid $color_slate_200;
+                .input-group-text {
+                    background: none;
+                    border: none;
+                }
+
+                .form-control {
+                    height: 50px;
+                    border: none;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .search-result {
+        max-height: 70vh;
+        overflow-y: auto;
+        text-align: left;
+
+        .rs-count {
+            margin-bottom: 10px;
+        }
+
+        .search-items {
+
+            .search-item {
+                margin-bottom: 10px;
+                padding: 5px;
+                a {
+                    display: flex;
+                    width: 100%;
+
+                    .search-img {
+                        img {
+                            width: 50px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .search-content {
+                        margin-left: 10px;
+                        h5 {
+                            color: $color_dark;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                        p {
+                            color: $color_slate_600;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &:hover{
+                    background-color: $color_gray_50;
+
+                    a {
+                        h5 {
+                            color: $color_indigo_600;
+                        }
+
+                        p {
+                            color: $color_dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
